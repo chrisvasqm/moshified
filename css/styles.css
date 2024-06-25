@@ -297,7 +297,6 @@ button {
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
 }
 
 .card__header,
@@ -312,6 +311,7 @@ button {
 
 .card--secondary .card__header {
   background-color: var(--color-secondary);
+  border-radius: 7px 7px 0 0;
   color: white;
 }
 
@@ -349,6 +349,19 @@ button {
 .plan .list__item {
   margin-bottom: 2rem;
   letter-spacing: 1px;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(/images/popular.svg);
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  right: 5%;
+  top: -6px;
 }
 
 @media screen and (min-width: 1024px) {
