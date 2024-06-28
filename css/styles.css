@@ -334,6 +334,7 @@ button {
 
 .card--primary .card__header {
   background-color: var(--color-primary);
+  border-radius: 7px 7px 0 0;
   color: white;
 }
 
