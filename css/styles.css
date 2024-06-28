@@ -351,6 +351,10 @@ button {
 
 /* Plans */
 
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: white;
   font-size: 2.4rem;
@@ -395,6 +399,14 @@ button {
   top: -6px;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -410,6 +422,10 @@ button {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 
@@ -765,4 +781,15 @@ button {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plan Block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
