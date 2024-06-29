@@ -793,3 +793,22 @@ button {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* Features Block */
+
+.feature {
+  gap: 6rem 3rem;
+  margin: 6rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 3rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
