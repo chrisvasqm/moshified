@@ -1,0 +1,16 @@
+{
+  "name": "moshified",
+  "version": "1.0.0",
+  "description": "Website built as part of The Ultimate HTML/CSS Series by Mosh Hamedani.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/parcel index.html",
+    "build": "node_modules/.bin/parcel build --no-minify index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "1.12.5"
+  }
+}
